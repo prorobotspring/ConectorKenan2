@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Kenan_Retrieve_In>
+
+	<Channel>Kenan Connect</Channel>
+	<System>Kenan</System>
+	<Number>${valor}</Number>
+	<Type>${operacion}</Type>
+	<Account_Kenan Account_type="${TipoCuenta}">${IdInterno}</Account_Kenan>
+	<Locate_Billing>${DireccionFacturador}</Locate_Billing>
+	<Create_Date>${FechaCreacion}</Create_Date>
+	<Activate_Date>${FechaActivacion}</Activate_Date>
+	<Last_Date_Billing Billing_Code="${RefUltimaFacturacion}">${UltimaFacturacion}</Last_Date_Billing>
+	<Frequency_Billing>${FrecuenciaFacturacion}</Frequency_Billing>
+	<Next_Billing_Date>${FechaProximaFacturacion}</Next_Billing_Date>
+	<Subscriber_Name>${Nombre}</Subscriber_Name>
+	<Subscriber_Last_Name>${Apellidos}</Subscriber_Last_Name>
+	<Subscriber_Identity_number>${cedula}</Subscriber_Identity_number>
+	<Subscriber_Credits>${Creditos}</Subscriber_Credits>
+	<Company>${empresa}</Company>
+	<Location_Billing Country="Venezuela">${CiudadFacturador}, ${estadoFacturador}</Location_Billing>
+	
+</Kenan_Retrieve_In>

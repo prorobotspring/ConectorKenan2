@@ -1,0 +1,3 @@
+[2017jun01 09:22:33,467][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConectorKenan2 - VERSION: 1.0]
+[2017jun01 09:22:33,483][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Desconexion y reconexion BlackBerry - Texto completo]
+[2017jun01 09:22:33,486][DEBUG][][doPost ConectorKenanServlet.java:68][]

@@ -1,0 +1,146 @@
+[2014jun11 11:59:32,354][INFO ][1704598735220414767--f94e803.1468212193c.-6ffe][configurarLogger BSSIntLogger.java:67][APLICACION: ConectorKenan2 - VERSION: 1.0]
+[2014jun11 11:59:32,356][INFO ][1704598735220414767--f94e803.1468212193c.-6ffe][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Desconexion y reconexion BlackBerry - Texto completo]
+[2014jun11 11:59:32,359][DEBUG][1704598735220414767--f94e803.1468212193c.-6ffe][doPost ConectorKenanServlet.java:68][<?xml version='1.0' encoding='UTF-8' ?>
+	<Kenan_Retrieve_In>
+		<Channel>Kenan Connect</Channel>
+		<System>Kenan</System>
+		<Number>584129575716</Number>
+		<Type>gsm</Type>
+	</Kenan_Retrieve_In>]
+[2014jun11 11:59:33,315][DEBUG][1704598735220414767--f94e803.1468212193c.-6ffe][doPost ConectorKenanServlet.java:73][{Type=gsm, Number=584129575716, Channel=Kenan Connect, System=Kenan}]
+[2014jun11 11:59:33,317][DEBUG][1704598735220414767--f94e803.1468212193c.-6ffe][doPost ConectorKenanServlet.java:74][584129575716]
+[2014jun11 11:59:33,318][DEBUG][1704598735220414767--f94e803.1468212193c.-6ffe][doPost ConectorKenanServlet.java:75][584129575716]
+[2014jun11 11:59:33,320][DEBUG][1704598735220414767--f94e803.1468212193c.-6ffe][doPost ConectorKenanServlet.java:86][Consultando el GSM numero 584129575716 en Kenan]
+[2014jun11 11:59:33,337][INFO ][5841295757161402504173321][processRequest RC.java:60][Inicio de Servicio: consultar.gsm.kenan]
+[2014jun11 11:59:33,372][DEBUG][5841295757161402504173321][RCConfigMgr ConfigMgr.java:50][Inicializando config]
+[2014jun11 11:59:33,431][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:261][consultar.gsm.kenan]
+[2014jun11 11:59:33,440][DEBUG][5841295757161402504173321][createCommandConfig RCConfig.java:297][ConsultarGSMKenan -##- consultar.gsm.kenan]
+[2014jun11 11:59:33,454][DEBUG][5841295757161402504173321][createCommandConfig RCConfig.java:374][subscriberID - subscriberID - null]
+[2014jun11 11:59:33,483][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:274][ve.com.digitel.kenan.rc.config.CommandConfig[ | delegator: ConsultarGSMKenan | service: consultar.gsm.kenan | conditions: [] | parameters: ve.com.digitel.kenan.model.ParametersConfig@bbaa0 | ignorar: false | codesToIgnore: null]]
+[2014jun11 11:59:33,485][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:282][{consultar.gsm.kenan=ve.com.digitel.kenan.rc.config.CommandChainConfig@995ca}]
+[2014jun11 11:59:33,487][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:261][consultar.cuenta.kenan]
+[2014jun11 11:59:33,488][DEBUG][5841295757161402504173321][createCommandConfig RCConfig.java:297][ConsultarCuentaKenan -##- consultar.cuenta.kenan]
+[2014jun11 11:59:33,490][DEBUG][5841295757161402504173321][createCommandConfig RCConfig.java:374][subscriberID - subscriberID - null]
+[2014jun11 11:59:33,491][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:274][ve.com.digitel.kenan.rc.config.CommandConfig[ | delegator: ConsultarCuentaKenan | service: consultar.cuenta.kenan | conditions: [] | parameters: ve.com.digitel.kenan.model.ParametersConfig@1493d50 | ignorar: false | codesToIgnore: null]]
+[2014jun11 11:59:33,493][DEBUG][5841295757161402504173321][initCommandChainConfig RCConfig.java:282][{consultar.cuenta.kenan=ve.com.digitel.kenan.rc.config.CommandChainConfig@1588844, consultar.gsm.kenan=ve.com.digitel.kenan.rc.config.CommandChainConfig@995ca}]
+[2014jun11 11:59:33,495][DEBUG][5841295757161402504173321][initDelegators RCConfig.java:198][local - ve.com.digitel.kenan.delegator.LocalClassDelegator - class]
+[2014jun11 11:59:33,503][DEBUG][5841295757161402504173321][initDelegators RCConfig.java:198][ConsultarGSMKenan - ve.com.digitel.kenan.delegator.ConsultarGSMKenanDelegator - class]
+[2014jun11 11:59:33,505][DEBUG][5841295757161402504173321][initDelegators RCConfig.java:219][Params: {password=
+							application.ConectorKenan.password
+						, userid=application.ConectorKenan.userid, sesion=application.ConectorKenan.sesion, security=
+							application.ConectorKenan.security
+						}]
+[2014jun11 11:59:33,506][DEBUG][5841295757161402504173321][initDelegators RCConfig.java:198][ConsultarCuentaKenan - ve.com.digitel.kenan.delegator.ConsultarCuentaKenanDelegator - class]
+[2014jun11 11:59:33,508][DEBUG][5841295757161402504173321][initDelegators RCConfig.java:219][Params: {password=application.ConectorKenan.password, userid=application.ConectorKenan.userid, sesion=application.ConectorKenan.sesion, security=application.ConectorKenan.security}]
+[2014jun11 11:59:33,527][DEBUG][5841295757161402504173321][getDelegator CommandManager.java:93][ConsultarGSMKenan]
+[2014jun11 11:59:33,630][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+
+<Kenan_Retrieve_In>
+
+	<Channel>Kenan Connect</Channel>
+	<System>Kenan</System>
+	<Number>${valor}</Number>
+	<Type>${operacion}</Type>
+	<Account_Kenan Account_type="${TipoCuenta}">${IdInterno}</Account_Kenan>
+	<Locate_Billing>${DireccionFacturador}</Locate_Billing>
+	<Create_Date>${FechaCreacion}</Create_Date>
+	<Activate_Date>${FechaActivacion}</Activate_Date>
+	<Last_Date_Billing Billing_Code="${RefUltimaFacturacion}">${UltimaFacturacion}</Last_Date_Billing>
+	<Frequency_Billing>${FrecuenciaFacturacion}</Frequency_Billing>
+	<Next_Billing_Date>${FechaProximaFacturacion}</Next_Billing_Date>
+	<Subscriber_Name>${Nombre}</Subscriber_Name>
+	<Subscriber_Last_Name>${Apellidos}</Subscriber_Last_Name>
+	<Subscriber_Identity_number>${cedula}</Subscriber_Identity_number>
+	<Subscriber_Credits>${Creditos}</Subscriber_Credits>
+	<Company>${empresa}</Company>
+	<Location_Billing Country="Venezuela">${CiudadFacturador}, ${estadoFacturador}</Location_Billing>
+	
+</Kenan_Retrieve_In>
+]
+[2014jun11 11:59:33,632][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+
+<Kenan_Retrieve_In>
+
+	<Channel>Kenan Connect</Channel>
+	<System>Kenan</System>
+	<Number>]
+[2014jun11 11:59:33,634][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: valor]
+[2014jun11 11:59:33,636][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Number>
+	<Type>]
+[2014jun11 11:59:33,638][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: operacion]
+[2014jun11 11:59:33,639][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Type>
+	<Account_Kenan Account_type="]
+[2014jun11 11:59:33,641][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: TipoCuenta]
+[2014jun11 11:59:33,642][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ">]
+[2014jun11 11:59:33,644][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IdInterno]
+[2014jun11 11:59:33,645][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Account_Kenan>
+	<Locate_Billing>]
+[2014jun11 11:59:33,647][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: DireccionFacturador]
+[2014jun11 11:59:33,648][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Locate_Billing>
+	<Create_Date>]
+[2014jun11 11:59:33,650][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: FechaCreacion]
+[2014jun11 11:59:33,651][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Create_Date>
+	<Activate_Date>]
+[2014jun11 11:59:33,653][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: FechaActivacion]
+[2014jun11 11:59:33,654][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Activate_Date>
+	<Last_Date_Billing Billing_Code="]
+[2014jun11 11:59:33,656][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RefUltimaFacturacion]
+[2014jun11 11:59:33,657][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ">]
+[2014jun11 11:59:33,659][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: UltimaFacturacion]
+[2014jun11 11:59:33,661][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Last_Date_Billing>
+	<Frequency_Billing>]
+[2014jun11 11:59:33,662][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: FrecuenciaFacturacion]
+[2014jun11 11:59:33,664][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Frequency_Billing>
+	<Next_Billing_Date>]
+[2014jun11 11:59:33,665][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: FechaProximaFacturacion]
+[2014jun11 11:59:33,667][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Next_Billing_Date>
+	<Subscriber_Name>]
+[2014jun11 11:59:33,668][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Nombre]
+[2014jun11 11:59:33,670][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Subscriber_Name>
+	<Subscriber_Last_Name>]
+[2014jun11 11:59:33,671][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Apellidos]
+[2014jun11 11:59:33,673][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Subscriber_Last_Name>
+	<Subscriber_Identity_number>]
+[2014jun11 11:59:33,674][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: cedula]
+[2014jun11 11:59:33,676][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Subscriber_Identity_number>
+	<Subscriber_Credits>]
+[2014jun11 11:59:33,677][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Creditos]
+[2014jun11 11:59:33,679][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Subscriber_Credits>
+	<Company>]
+[2014jun11 11:59:33,680][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: empresa]
+[2014jun11 11:59:33,682][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Company>
+	<Location_Billing Country="Venezuela">]
+[2014jun11 11:59:33,683][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: CiudadFacturador]
+[2014jun11 11:59:33,685][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: , ]
+[2014jun11 11:59:33,686][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: estadoFacturador]
+[2014jun11 11:59:33,688][DEBUG][5841295757161402504173321][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Location_Billing>
+	
+</Kenan_Retrieve_In>
+]
+[2014jun11 11:59:33,696][DEBUG][5841295757161402504173321][execute CommandChain.java:95][Parametros de entrada: ve.com.digitel.kenan.model.Request{ | header: {traceid=5841295757161402504173321, Target=consultar.gsm.kenan} | context: {subscriberID=584129575716}}]
+[2014jun11 11:59:33,713][DEBUG][5841295757161402504173321][getFilterChain FilterManager.java:62][[]]
+[2014jun11 11:59:33,716][DEBUG][5841295757161402504173321][execute FilterChain.java:73][ve.com.digitel.kenan.model.Request{ | header: {traceid=5841295757161402504173321, Target=consultar.gsm.kenan} | context: {subscriberID=584129575716}}]
+[2014jun11 11:59:33,718][DEBUG][5841295757161402504173321][execute CommandChain.java:129][Servicio a EJECUTAR consultar.gsm.kenan]
+[2014jun11 11:59:33,841][ERROR][5841295757161402504173321][execute CommandChain.java:147][Error ocurrida durante la ejecucion de secuencias de comandos]
+java.lang.NullPointerException
+	at ve.com.digitel.kenan.delegator.ConsultarGSMKenanDelegator.consultarGSMKenan(ConsultarGSMKenanDelegator.java:695)
+	at ve.com.digitel.kenan.delegator.ConsultarGSMKenanDelegator.execute(ConsultarGSMKenanDelegator.java:738)
+	at ve.com.digitel.kenan.rc.command.CommandChain.execute(CommandChain.java:132)
+	at ve.com.digitel.kenan.rc.RC.processRequest(RC.java:64)
+	at ve.com.digitel.conector.servlet.ConectorKenanServlet.doPost(ConectorKenanServlet.java:93)
+	at ve.com.digitel.conector.servlet.ConectorKenanServlet.doGet(ConectorKenanServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2014jun11 11:59:33,844][INFO ][5841295757161402504173321][processRequest RC.java:66][Fin Servicio: consultar.gsm.kenan Respuesta: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2014jun11 11:59:33,846][INFO ][5841295757161402504173321][doPost ConectorKenanServlet.java:99][{Status=0, GSM=584129575716, descripcion=Consulta exitosa, operacion=gsm}]
+[2014jun11 11:59:33,847][INFO ][5841295757161402504173321][doPost ConectorKenanServlet.java:100][**************null]

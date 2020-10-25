@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<annotation>
+		<documentation>
+			Configuracion de los servicios para el sistema administrador
+			de datos de prueba
+		</documentation>
+		<version>1.0</version>
+	</annotation>
+
+	<servicios>
+		<servicio id="consultar.gsm.kenan">
+			<annotation>
+				<documentation>
+					Comando para la consulta de un gsm en kenan
+				</documentation>
+			</annotation>
+			<comandos>
+				<comando delegador="ConsultarGSMKenan"
+					servicio="consultar.gsm.kenan">
+					<parametros>
+						<parametro formal="subscriberID"
+							actual="subscriberID" />
+					</parametros>
+				</comando>
+			</comandos>
+		</servicio>
+
+		<servicio id="consultar.cuenta.kenan">
+			<annotation>
+				<documentation>
+					Comando para la consulta de una cuenta kenan
+				</documentation>
+			</annotation>
+			<comandos>
+				<comando delegador="ConsultarCuentaKenan"
+					servicio="consultar.cuenta.kenan">
+					<parametros>
+						<parametro formal="subscriberID"
+							actual="subscriberID" />
+					</parametros>
+				</comando>
+			</comandos>
+		</servicio>
+
+
+	</servicios>
+
+	<delegadores>
+
+		<delegador id="local" constructor="class"
+			nombre="ve.com.digitel.kenan.delegator.LocalClassDelegator">
+			<servicioDelegado id="cond:in"
+				nombre="ve.com.digitel.kenan.filtros.Incluido" />
+			<servicioDelegado id="cond:menor"
+				nombre="ve.com.digitel.kenan.filtros.Menor" />
+			<servicioDelegado id="stm:set"
+				nombre="ve.com.digitel.kenan.command.Set" />
+			<servicioDelegado id="stm:setAll"
+				nombre="ve.com.digitel.kenan.command.SetAll" />
+		</delegador>
+
+		<delegador id="ConsultarGSMKenan" constructor="class"
+			nombre="ve.com.digitel.kenan.delegator.ConsultarGSMKenanDelegator">
+			<initParams>
+					<initParam>
+						<name>security</name>
+						<value>
+							application.ConectorKenan.security
+						</value>
+					</initParam>
+					<initParam>
+						<name>userid</name>
+						<value>application.ConectorKenan.userid</value>
+					</initParam>
+					<initParam>
+						<name>sesion</name>
+						<value>application.ConectorKenan.sesion</value>
+					</initParam>
+					<initParam>
+						<name>password</name>
+						<value>
+							application.ConectorKenan.password
+						</value>
+					</initParam>
+			</initParams>
+		</delegador>
+
+		<delegador id="ConsultarCuentaKenan" constructor="class"
+			nombre="ve.com.digitel.kenan.delegator.ConsultarCuentaKenanDelegator">
+			<initParams>
+				<initParam>
+					<name>security</name>
+					<value>application.ConectorKenan.security</value>
+				</initParam>
+				<initParam>
+					<name>userid</name>
+					<value>application.ConectorKenan.userid</value>
+				</initParam>
+				<initParam>
+					<name>sesion</name>
+					<value>application.ConectorKenan.sesion</value>
+				</initParam>
+				<initParam>
+					<name>password</name>
+					<value>application.ConectorKenan.password</value>
+				</initParam>
+			</initParams>
+		</delegador>
+	</delegadores>
+</config>
